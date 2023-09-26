@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  font-family: "Mooli", sans-serif;
+  background-color: rgb(51, 51, 51);
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 10px;
+}
+
+.grid {
+  border: 0px solid #ffffff;
+  padding: 0;
+}
+
+.left {
+  margin: 10px;
+  padding: 20px;
+  animation: viewMyWork 4s ease;
+  text-decoration: none;
+  overflow: hidden;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+  overflow-y: auto;
+}
+
+.nav-iteams {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  --s: 0.1em; 
+  --c: #ffffff; 
+
+  color: rgb(255, 255, 255);
+  padding-bottom: var(--s);
+  background: linear-gradient(90deg, var(--c) 50%, #ffffff 0)
+      calc(100% - var(--_p, 0%)) / 200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100% / var(--_p, 0%) var(--s) no-repeat;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  transition: 0.5s;
+}
+
+.nav-iteams:hover {
+  --_p: 100%;
+}
+
+.logo {
+  font-size: 20px;
+}
+
+nav ul {
+  padding-top: 10px;
+}
+
+nav ul li {
+  list-style: none;
+  padding-bottom: 10px;
+}
+
+.nav-iteams-bottom {
+  padding-top: 40.5ch;
+}
