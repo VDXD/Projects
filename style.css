@@ -6,7 +6,7 @@
 
 body {
   font-family: "Mooli", sans-serif;
-  background-color: rgb(75, 75, 75);
+   background-color: rgb(75, 75, 75);
 }
 
 nav {
@@ -21,7 +21,6 @@ nav {
 }
 
 .left {
-  /* background-color: rgb(210, 210, 210); */
   margin: 10px;
   padding: 20px;
   animation: viewMyWork 4s ease;
@@ -37,8 +36,8 @@ nav {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 10px;
-  --s: 0.1em; 
-  --c: #000000; 
+  --s: 0.1em;
+  --c: #000000;
 
   color: white;
   padding-bottom: var(--s);
@@ -169,8 +168,8 @@ nav ul li {
   text-decoration: none;
   color: rgb(255, 255, 255);
   padding: 10px;
-  --s: 0.1em; 
-  --c: #000000; 
+  --s: 0.1em;
+  --c: #000000;
 
   color: white;
   padding-bottom: var(--s);
@@ -185,7 +184,6 @@ nav ul li {
 .view-my-work:hover {
   --_p: 100%;
 }
-
 
 @keyframes viewMyWork {
   0% {
@@ -233,4 +231,24 @@ nav ul li {
   transform: translate(20%, 2rem);
   animation: viewMyWork 4s ease;
   text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+  
+  nav {
+    display: grid;
+    grid-template-rows: 0.1fr 4fr 2fr 4fr;
+  }
+
+  .grid {
+    border: 0px solid #ffffff;
+    padding: 0;
+  }
+
+  .logo {
+    font-size: 30px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+  }
 }
